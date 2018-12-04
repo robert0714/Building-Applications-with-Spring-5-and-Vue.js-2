@@ -10,7 +10,7 @@ export default {
   },
   methods: {
     deleteClicked () {
-      this.$emit('delete')
+      this.$emit('delete');
     }
   }
-}
+};

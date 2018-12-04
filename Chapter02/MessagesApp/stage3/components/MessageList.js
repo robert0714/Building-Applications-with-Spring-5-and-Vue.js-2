@@ -1,4 +1,4 @@
-import MessageListItem from './MessageListItem.js'
+import MessageListItem from './MessageListItem.js';
 
 export default {
   name: 'MessageList',
@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     deleteMessage (message) {
-      this.$emit('delete', message)
+      this.$emit('delete', message);
     }
   }
-}
+};

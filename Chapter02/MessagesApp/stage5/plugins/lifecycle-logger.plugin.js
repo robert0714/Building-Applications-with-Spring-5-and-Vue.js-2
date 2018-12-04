@@ -7,29 +7,29 @@ const switchers = {
 
 export default {
   install (Vue, options) {    
-    Object.assign(switchers, options)
+    Object.assign(switchers, options);
     
     Vue.mixin({  
       created () {
         if (switchers.created) {
-          console.log(`${this.$options.name} created`)
+          console.log(`${this.$options.name} created`);
         }        
       },
       beforeMount () {
         if (switchers.beforeMount) {
-          console.log(`${this.$options.name} about to mount`)
+          console.log(`${this.$options.name} about to mount`);
         }        
       },
       mounted () {
         if (switchers.mounted) {
-          console.log(`${this.$options.name} mounted`) 
+          console.log(`${this.$options.name} mounted`) ;
         }        
       },  
       destroyed () {
         if (switchers.destroyed) {
-          console.log(`${this.$options.name} destroyed`)
+          console.log(`${this.$options.name} destroyed`);
         }        
       }
-    })
+    });
   }
-}
+};

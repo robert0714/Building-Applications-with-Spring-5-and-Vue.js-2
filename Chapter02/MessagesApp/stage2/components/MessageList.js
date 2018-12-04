@@ -12,7 +12,7 @@ export default {
   },
   methods: {
     deleteMessage (message) {
-      this.$emit('delete', message)
+      this.$emit('delete', message);
     }
   }
-}
+};
