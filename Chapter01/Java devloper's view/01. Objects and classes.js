@@ -16,7 +16,7 @@ var user = {
   greeting: function () {
     console.log('Hi, I\'m ' + this.name + '.');
   }
-}
+};
 user.greeting();  // Hi, I'm Sunny.
 
 
@@ -27,7 +27,7 @@ function User (name, interests) {
   this.interests = interests;
   this.greeting = function () {
     console.log('Hi, I\'m ' + this.name + '.');
-  }
+  };
 }
 // Call the constructor with new to create a user object
 var user = new User('Sunny', ['Traveling', 'Swimming']);
@@ -47,7 +47,7 @@ user.greeting(); // Uncaught TypeError: user.greeting() is not a function
 // Add greeting to prototype object
 User.prototype.greeting = function () {
   console.log('Hi, I\'m ' + this.name + '.');
-}
+};
 user.greeting(); // Hi, I'm Sunny.
 
 
@@ -77,7 +77,7 @@ class User {
   }
   // Equivalent to User.prototype.greeting
   greeting () {
-    console.log('Hi, I\'m ' + this.name + '.')
+    console.log('Hi, I\'m ' + this.name + '.');
   }
 }
 let user = new User('Sunny', ['Traveling', 'Swimming']);
@@ -92,6 +92,6 @@ let User = class {
     this.interests = interests;
   }
   greeting () {
-    console.log('Hi, I\'m ' + this.name + '.')
+    console.log('Hi, I\'m ' + this.name + '.');
   } 
-}
+};

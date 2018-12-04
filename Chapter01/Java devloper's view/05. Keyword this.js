@@ -6,7 +6,7 @@ function User (name) {
       this.constructor.name + '" context.');
     var drink = function () {
       console.log('Drinking in "' + this.constructor.name + '"');
-    } 
+    } ;
     drink(); 
   }; 
   function ask() {

@@ -4,7 +4,7 @@ function User (name, interests) {
 }
 User.prototype.greeting = function () {
    console.log('Hi, I\'m ' + this.name + '.');
-}
+};
 function TeamMember (name, interests, tasks) {
    User.call(this, name, interests);
    this.tasks = tasks;

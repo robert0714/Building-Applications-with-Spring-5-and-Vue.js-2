@@ -4,8 +4,8 @@ obj['100'] = 'one hundred';
 console.log(obj[100]);  // 'one hundred'
 // Both foo and bar will be casted to string '[object Object]'
 var foo = {prop: 'f'}, bar = {prop: 'b'};
-obj[foo] = 'Foo'
-console.log(obj[bar])  // 'Foo'
+obj[foo] = 'Foo';
+console.log(obj[bar]) ; // 'Foo'
 
 
 // Define properties using Object.defineProperty()

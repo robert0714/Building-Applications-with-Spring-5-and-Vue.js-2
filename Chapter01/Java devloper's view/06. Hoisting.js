@@ -2,7 +2,7 @@ function workout() {
   goToGym();    // What will the output be?
   var goToGym = function () {
     console.log('Workout in Gym A');
-  }
+  };
   return;    
   function goToGym() {
     console.log('Workout in Gym B');
@@ -20,7 +20,7 @@ function workout() {
   goToGym();
   goToGym = function () {
     console.log('Workout in Gym A');
-  }
+  };
   return;
 }
 workout();
